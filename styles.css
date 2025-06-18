@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #252221bd;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0px 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: transparent;
+  height: 100px;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #252221bd;
+  border-radius: 40px;
+  height: 20px;
+  line-height: 20px;
+  padding: 20px;
+  align-content: center;
+}
+
+header nav {
+  background: #252221bd;
+  align-content: center;
+  padding: 20px;
+  border-radius: 40px;
+  margin-left: auto;
+  height: 20px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  line-height: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(230, 230, 230);
+  color: rgb(57, 57, 57);
+  font-size: 12px;
+}
+
+main section {
+  background: white;
+  padding: 50px 20px;
+}
+
+#services h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #d79956;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.services-container {
+  padding: 15px;
+  display: flex;
+}
+
+.service-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form input[type="submit"] {
+  background: #d98023;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+form input[type="submit"]:hover {
+  background: #ad6808;
+  color: white;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(235, 235, 235);
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+  color: rgb(141, 141, 141);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #d98023;
+}
+
+.hero h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero {
+  padding: 0;
+}
+
+.hero .hero-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero .hero-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .hero-img:before {
+  content: "";
+  background: color-mix(in srgb, black, transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .hero-content {
+  position: absolute;
+  inset: 90px 64px 64px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.hero .hero-content p {
+  color: white;
+}
+
+
+.hero p {
+  text-align: center;
+}
+
+#about {
+  display: flex;
+  gap: 40px;
+  color: black;
+}
+
+.about-img {
+  width: 40%;
+  height: auto;
+}
+
+.about-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-content {
+  width: 60%;
+}
+
+#services {
+  text-align: center;
+  background: #d98023;
+  color: white;
+}
+
+#contact {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services p,
+#services h2,
+#services h3,
+#services blockquote {
+  color: white;
+}
